@@ -410,6 +410,70 @@ a {
   color: #2864e8;
 }
 
+/* =========================
+   HERO BUTTONS
+========================= */
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+
+/* RESUME BUTTON */
+
+.resume-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 14px 22px;
+
+  background: #ffffff;
+  color: #2864e8;
+
+  border: 1.5px solid #2864e8;
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.resume-btn:hover {
+  background: #2864e8;
+  color: #ffffff;
+
+  transform: translateY(-2px);
+}
+
+.resume-btn i {
+  font-size: 18px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 576px) {
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-buttons a {
+    width: 100%;
+    text-align: center;
+  }
+
+}
+
 
 /* =========================
    COMMON SECTION
